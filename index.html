@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashin</title>
+    <!-- CUSTOM CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 
     <style>
         .font-bebas {
@@ -31,9 +33,45 @@
     <header class="bg-orange-100 py-20 px-4 md:px-32">
 
         <!-- NAV SECTION -->
-        <nav>
-
-        </nav>
+        <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+            <img class="w-80" src="assets/icons/logo.png " alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li>
+                  <details>
+                    <summary>Parent</summary>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-outline btn-success">Login</a>
+            </div>
+          </div>
         <!-- BANNER SECTION -->
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="space-y-3">
@@ -203,6 +241,42 @@
                     </svg>
                     Buy Now</button>
                         </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- 2ND SECTION START -->
+        <section class="mt-32">
+            <!-- container  -->
+            <div class="lg:flex flex-1 ">
+                <!-- left div -->
+                <div>
+                    <!-- items -->
+                    <div class="flex items-center gap-10 border-2 rounded-2xl p-3 mb-8">
+                        <img class="w-28" src="assets/icons/house.png" alt="">
+                        <div>
+                            <h2 class="text-2xl font-bold">Find the Perfect Fit</h2>
+                        <p>Everybody is different, which is why we offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-10 border-2 rounded-2xl p-3 mb-8">
+                        <img class="w-28" src="assets/icons/house.png" alt="">
+                        <div>
+                            <h2 class="text-2xl font-bold text-[#363958]">Find the Perfect Fit</h2>
+                        <p>Everybody is different, which is why we offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-10 border-2 rounded-2xl p-3 mb-8">
+                        <img class="w-28" src="assets/icons/house.png" alt="">
+                        <div>
+                            <h2 class="text-2xl font-bold">Find the Perfect Fit</h2>
+                        <p>Everybody is different, which is why we offer styles for every body.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right div -->
+                <div class="lg:ml-56 mt-32">
+                    <img class="h-80" src="assets/images/shopping.png" alt="">
 
                 </div>
             </div>
